@@ -44,6 +44,17 @@
       background: var(--card);
       border-radius: 18px;
       box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+
+    .card {
+      padding: 22px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
 
@@ -153,6 +164,10 @@
 
     .project strong { font-size: 15px; }
     .project p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    h2:not(:first-of-type) {
+      margin-top: 16px;
+    }
 
     footer {
       margin-top: 16px;
